@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCDS</title>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="logo navbar-brand" target="_blank" href="https://www.facebook.com/groups/372944397581792"><img
+                        src="./images/Logo/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">القائمة</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">عن الكلية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#departments">الاقسام العلمية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#academic-program">البرامج الاكاديمية</a>
+                            </li>
+                            <li class="nav-item-1 nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    الطلاب
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">الخطة الدراسية للأقسام</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/Guides/StdGuide.pdf">دليل الطالب</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/Guides/charter_of_Ethics_for_Faculty_students.pdf">الميثاق
+                                            الاخلاقي للطالب الجامعي</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLSdJs0XDZ3rw8CC1wn8M-h1nsZqGNCMWOJvZRTEfXs56t9IzYw/viewform">طلب
+                                            إنشاء إيميل جامعي</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank" href="#">جداول المحاضرات</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank" href="#">جدوال الامتحانات</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank" href="#">النتائج</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank" href="#">CGPA</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank" href="#">مجلس اتحاد الطلاب</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLScGEhvq11w8gFlwNezHbx4AP3k7Q-jaTzV97QyDnQy3oXIKng/viewform">شكاوي
+                                            الايميل الجامعي</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLSfsHm5UgHTmruJr4yPSwGP1_iR45QvbKNonHzIR9NBVahX0dw/viewform">خدمة
+                                            معرفة البريد</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-2  nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    خدمات طلابية
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/StdAffairs/complaints_form.pdf">شكاوي</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/StdAffairs/installmentRequest.pdf">طلب
+                                            تقسيم مصروفات</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/StdAffairs/exam_complaints.pdf">تظلم
+                                            طالب من نتيجة مقرر</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/StdAffairs/Withdraw.pdf">طلب
+                                            انسحاب</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/StdAffairs/extraHrs.pdf">ساعات
+                                            إضافية</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-3  nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    الخطة الدراسية للاقسام
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/StdAffairs/StudyPlanGeneral.pdf">الخطة
+                                            الدراسية للقسم العام</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/StdAffairs/StudyPlanMedia.pdf">الخطة
+                                            الدراسية
+                                            لبرنامج تحليلات الوسائط الإعلامية</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/StdAffairs/StudyPlanHealthcare.pdf">لخطة
+                                            الدراسية لبرنامج معلوماتية الرعاية الصحية</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/StdAffairs/StudyPlanAI.pdf">الخطة
+                                            الدراسية لبرنامج النظم
+                                            الذكية</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/StdAffairs/StudyPlanCyber.pdf">الخطة
+                                            الدراسية لبرنامج الأمن
+                                            السيبراني</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://fcds.alexu.edu.eg/images/StdAffairs/StudyPlanBussiness.pdf">الخطة
+                                            الدراسية لبرنامج تحليلات
+                                            الأعمال</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item-4  nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    المزيد
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://fcds.alexu.edu.eg/images/Guides/charter_of_Ethics_for_Faculty_members.pdf">ميثاق
+                                            أخلاقيات هيئة التدريس ومعاونيهم</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://fcds.alexu.edu.eg/images/Guides/Directory_of_Cultural_Relations_2019.pdf">دليل
+                                            الادارة العامة للعلاقات الثقافية</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://fcds.alexu.edu.eg/images/Guides/Graduate_Studies_Guide_2019.pdf">الدليل
+                                            الموحد للدراسات العليا</a></li>
+                                </ul>
+                            </li>
+                            <h5 class="mt-4"> تغيير اللغة</h5>
+                            <a href="./eng.html">English</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slider -->
+    <div id="mainCarousel" class="carousel slide vh-100" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- image -->
+        <div class="carousel-inner" id="main-returnpoint">
+            <div class="carousel-item active">
+                <img src="./images/slider/studentUnion (1).jpg" class="d-block w-100 vh-100 " alt="Slide 1">
+
+            </div>
+            <div class="carousel-item">
+                <img src="./images/slider/ICPC.jpg" class="d-block w-100 vh-100" alt="Slide 2">
+
+            </div>
+            <div class="carousel-item">
+                <img src="./images/slider/522390241_1157367403087002_5021996101160902766_n.jpg"
+                    class="d-block w-100 vh-100" alt="Slide 3">
+
+            </div>
+        </div>
+
+        <button class=" carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+
+    <!-- about unvirsty-->
+    <section id="about" class="container my-5 ">
+        <div class="p-4 rounded shadow dean-section">
+            <h2 class="fw-bold text-primary mb-4 border-bottom pb-2">
+                <span class="bi-mortarboard-fill"></span> عن الكلية
+            </h2>
+            <p class="about_p lead">
+                إزداد الاهتمام بعلوم البيانات في الآونه الاخيرة بشكل ملحوظ من قبل الشركات من جهة، والأفراد
+                الراغبين بتعلم هذه المجالات من جهة أخرى.
+                وأصبحت علوم البيانات هي علوم يغلب عليها تداخل الاختصاصات والتي تقوم على استخدام الأساليب العلمية
+                والمعالجات والخوارزميات والنظم
+                لاستخراج المعرفة والأفكار من البيانات بشكليها، سواء مُهيكلة أو غير مهيكلة.
+            </p>
+            <p class="about_p">
+                وحسب آخر التقارير المنشورة فإن ما نسبته 90% من البيانات الموجودة اليوم تم اختراعها خلال العامين
+                الماضيين، وبالتالي فإن علم البيانات
+                من أكثر التخصصات انتشارًا حاليًا، وإنه سيزداد الطلب عليه في الفترات القادمة بسبب حاجة الشركات
+                العالمية الكبرى إلى تحليل والتعامل
+                مع كم البيانات الهائل الذي يتكاثر يوميًا.
+            </p>
+            <p class="about_p">
+                ومن هذا المنطلق، أخذت جامعة الإسكندرية قرار إنشاء كلية الحاسبات وعلوم البيانات في مجلس الجامعة
+                بجلسته المنعقدة في
+                31 / 3 / 2019 بتخصصات متفردة تمثل اتجاهات حديثة متماشية مع التقدم التكنولوجي وتخدم سوق العمل
+                وتساهم في بناء المجتمع
+                الرقمي وتطوير البنية المعلوماتية له.
+            </p>
+            <p class="about_p">
+                وتبلغ سنوات الدراسة في مرحلة البكالوريوس أربع سنوات دراسية مقسمة إلى ثمانية فصول دراسية مدة كل
+                فصل خمسة عشر أسبوعًا
+                بنظام الساعات المعتمدة. تبدأ الدراسة بستة برامج متميزة: الحوسبة وعلوم البيانات، تحليلات الأعمال،
+                النظم الذكية، تحليل الوسائط الإعلامية،
+                تحليلات ومعلوماتية الرعاية الصحية، والأمن السيبراني، مع إمكانية فتح برامج جديدة لتلبية متطلبات
+                السوق.
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <!-- dean-section -->
+    <section class="dean-section py-5  ">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Dean’s speech-->
+                <div class="col-md-8">
+                    <h2 class="mb-3 fw-bold" style="font-size: 1.8rem;">كلمة عميد الكلية</h2>
+                    <p style=" line-height: 1.8;">
+                        القرن الحادى والعشرين هو قرن البيانات في ظل ثورة التكنولوجيا والاتصالات، فقامت جامعة
+                        الاسكندرية بانشاء كلية الحاسبات وعلوم البيانات لتكون قاطرة التقدم على خطوط سكة
+                        التكنولوجيا لتجوب الكوكب في لحظات عن طريق تخريج كوادر قادرة على صنع ومسايرة هذا التطور
+                        الهائل في جميع مجالات علوم البيانات من البيانات الصحية الى بيانات إدارة الاعمال والتجارة
+                        الاليكترونية ومن النظم الذكية الى امن كل نظم البيانات الى أنظمة الوسائط بكل اشكالها
+                        واستخداماتها.
+                        <br><br>
+                        كلية الحاسبات وعلوم البيانات هي احد اهم دعامات بناء الدولة وتحقيق التنمية المستدامة عن
+                        طريق الاهتمام بمجالات علوم البيانات والذكاء الاصطناعى والبحث العلمى المتميز بهم حيث
+                        تمتلك كلية الحاسبات وعلوم البيانات جامعة الإسكندرية مجموعة من البرامج المتميزة في
+                        التخصصات التكنولوجية التي لا يوجد بديل لها في جميع الجامعات ومع تطوير برامج الكلية
+                        بالتخطيط الاستراتيجي سوف نحقق افضل النتائج وتزويد المجتمع المحلى والدولى بالخريجين
+                        الأكفاء في كل المجالات التكنولوجية.
+                        <br><br>
+                        والله ولي التوفيق
+                    </p>
+                    <p class="fw-bold mt-3" style="font-size: 1.1rem;">أ.د / ماجده ماتبولي</p>
+                </div>
+
+                <!-- Dean’s image-->
+                <div class="col-md-4 text-center">
+                    <img src="./images/العميده_3.jpg" alt="عميد الكلية" class=" rounded shadow-lg"
+                        style="border: 4px solid white;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Divider -->
+    <div class="divider">
+    </div>
+
+
+
+    <!-- student section-->
+    <section class=" py-5 dean-section">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">طلاب الكلية</h2>
+            <div class="row g-4">
+                <!-- student card-->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card student-card h-100 shadow-sm">
+                        <img src="./images/student_1.jpg" class="card-img-top" alt="طالب 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">محمد اكرم</h5>
+                            <p class="card-text">امين اللجنة الثقافية</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- student card-->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card student-card h-100 shadow-sm">
+                        <img src="./images/student_2.jpg" class="card-img-top" alt="طالب 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ايسل محمد</h5>
+                            <p class="card-text">امين لجتة الاسر العاليا</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- student card-->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card student-card h-100 shadow-sm">
+                        <img src="./images/student_3.jpg" class="card-img-top" alt="طالب 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">محمد مصطفي</h5>
+                            <p class="card-text">رئيس اتحاد الطلاب</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- departments -->
+    <section id="departments" class="py-5  dean-section">
+        <div class="container">
+            <h2 class="mb-5 text-center">
+                <i class="bi bi-building-fill text-primary"></i> الأقسام العلمية
+            </h2>
+
+            <div class="row g-4">
+                <!-- Business Analytics Program-->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span class="bi bi-graph-up-arrow text-success"></span> برنامج تحليلات الأعمال
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>تحليل ونمذجة عمليات الأعمال.</li>
+                                <li>ابتكار حلول تجميع البيانات مبنية على الاتجاهات الحديثة في التكنولوجيا.</li>
+                                <li>بناء مستودعات البيانات من مصادر مختلفة من البيانات.</li>
+                                <li>استخدام الطرق المختلفة لتحليل البيانات لدعم القرارات فى مؤسسات الأعمال.</li>
+                                <li>توطين وإدارة نظم المعلومات بما في ذلك الشق القانوني لدعم التحول الرقمي.</li>
+                                <li>تحليل البينات في القطاعات المختلفة مثل التسويق الرقمي، التجارة الإلكترونية،
+                                    الحكومة الإلكترونية.</li>
+                                <li>تطوير حلول ومنتجات مبنية على تكنولوجيا تحليل البيانات.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intelligent Systems Program -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span class="bi bi-cpu-fill text-danger"></span> برنامج النظم الذكية
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>تحديد وتحليل وتقييم مكونات وأساسيات النظم الذكية.</li>
+                                <li>جمع وتحليل المعلومات والتوقعات من البيانات الضخمة والمساعدة على اتخاذ
+                                    القرار.</li>
+                                <li>تصميم وبناء واختبار أنظمة الحوسبة الذكية.</li>
+                                <li>تصميم وبناء برمجيات النظم المدمجة والروبوتات.</li>
+                                <li>التعرف على كيفية تصميم وإدارة مدن ذكية.</li>
+                                <li>توفير الدعم والإدارة والصيانة اللازمة لضمان كفاءة النظم الذكية.</li>
+                                <li>مراجعة وتقييم النتائج لتحديد فاعلية الأنظمة القائمة.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media Analytics Program -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span class="bi bi-camera-reels-fill text-warning"></span> برنامج تحليلات الوسائط
+                                الإعلامية
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>تحليل محتوى الوسائط الإعلامية واستشراف المتغيرات الرقمية.</li>
+                                <li>إنتاج البرامج الإذاعية والتليفزيونية الرقمية.</li>
+                                <li>تحليل بيانات العمل الصحفي رقمياً.</li>
+                                <li>تطوير الممارسات الإعلامية باستخدام علوم البيانات.</li>
+                                <li>توطين الرقمنة في المؤسسات الإعلامية.</li>
+                                <li>بناء مراصد لتحليل البيانات على شبكات التواصل وتحليل المشاعر.</li>
+                                <li>ابتكار آليات لاستطلاعات الرأي إلكترونياً.</li>
+                                <li>ابتكار سياسات إعلامية مستندة لتحليلات علمية.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Healthcare Analytics & Informatics Program -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span class="bi bi-heart-pulse-fill text-danger"></span> برنامج تحليلات ومعلوماتية
+                                الرعاية الصحية
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>توصيف المفاهيم الأساسية في العلوم الصحية.</li>
+                                <li>استخدام البيانات والمعلومات في المجالات الصحية.</li>
+                                <li>التعرف على المحددات الصحية وتقييمها.</li>
+                                <li>تحديد آليات اتخاذ القرارات الصحية.</li>
+                                <li>تمكين المشاركة المعلوماتية بين مؤسسات الرعاية.</li>
+                                <li>التميز في إدارة نظم الرعاية الصحية.</li>
+                                <li>دعم الصحة العامة والأبحاث الصحية.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Program -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span class="bi bi-shield-lock-fill text-primary"></span> برنامج الأمن السيبراني
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>تحليل وتصميم أنظمة تكنولوجيا معلومات آمنة.</li>
+                                <li>ضمان كفاءة أداء نظم تكنولوجيا المعلومات.</li>
+                                <li>تحليل وتخفيف تهديدات نظم المعلومات.</li>
+                                <li>التحقيق في جرائم تكنولوجيا المعلومات.</li>
+                                <li>جمع وتحليل معلومات الأمن السيبراني.</li>
+                                <li>تقييم معلومات الأمن السيبراني المتاحة.</li>
+                                <li>توفير القيادة والتوجيه في مجال الأمن السيبراني.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- academic program -->
+    <section id="academic-program" class="container my-5 p-4 rounded shadow-sm" style="background-color: #f8fbff;">
+        <h2 class="mb-3 text-primary">البرامج الأكاديمية</h2>
+        <p class="text-muted">المرحلة الجامعية / الدراسات العليا</p>
+
+        <!-- Undergraduate -->
+        <h3 class="mt-4 text-secondary">المرحلة الجامعية</h3>
+        <ul class="list-unstyled ps-3">
+            <li>شروط القبول ونظام الدراسة</li>
+            <li>نظام التقييم والتقديرات</li>
+            <li>مستويات الدراسة</li>
+            <li>الإرشاد الأكاديمي</li>
+            <li>المواظبة</li>
+            <li>التخرج ومرتبة الشرف</li>
+            <li>تغيير البرنامج الدراسي</li>
+        </ul>
+
+        <hr>
+
+        <!-- Admission Requirements -->
+        <h4 class="mt-4 text-info">1. شروط القبول ونظام الدراسة</h4>
+        <ul class="list-unstyled ps-3">
+            <li>تخضع الكلية لنظام القبول بالجامعات المصرية الحكومية.</li>
+            <li>قبول الطلاب الوافدين بعد موافقة الجهات المختصة واجتياز الاختبارات.</li>
+            <li>قبول التحويلات من الكليات المناظرة وغير المناظرة.</li>
+            <li>لغة الدراسة الرسمية: <span class="fw-bold">اللغة الإنجليزية</span>.</li>
+        </ul>
+
+        <!-- Study System -->
+        <h5 class="mt-3 text-dark">النظام الدراسي</h5>
+        <ul class="list-unstyled ps-3">
+            <li>يعتمد البرنامج على نظام الساعات المعتمدة والفصول الدراسية.</li>
+            <li>الفصلان الأساسيان: الخريف والربيع، مدة كل منهما 15 أسبوعاً.</li>
+            <li>فصل صيفي اختياري مدته 8 أسابيع.</li>
+            <li>إجمالي الساعات المعتمدة: <span class="fw-bold">140 ساعة</span>.</li>
+        </ul>
+
+        <!-- Evaluation System -->
+        <h4 class="mt-4 text-info">2. نظام التقييم والتقديرات</h4>
+        <ul class="list-unstyled ps-3">
+            <li>النهاية العظمى لكل مقرر: 100 درجة.</li>
+            <li>درجة الامتحان التحريري النهائي: من 50 إلى 70 درجة.</li>
+            <li>درجة الامتحان الشفهي (إن وجد): لا تزيد عن 10 درجات.</li>
+            <li>الرسوب إذا حصل الطالب على أقل من 30% في التحريري.</li>
+        </ul>
+
+        <div class="table-responsive mt-3">
+            <table class="table table-bordered text-center align-middle table-striped table-hover">
+                <thead class="table-primary ">
+                    <tr>
+                        <th>النسبة المئوية</th>
+                        <th>النقاط</th>
+                        <th>الرمز</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>90% فأكثر</td>
+                        <td>4.000</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>85% - أقل من 90%</td>
+                        <td>3.666</td>
+                        <td>A-</td>
+                    </tr>
+                    <tr>
+                        <td>80% - أقل من 85%</td>
+                        <td>3.333</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>75% - أقل من 80%</td>
+                        <td>3.000</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>70% - أقل من 75%</td>
+                        <td>2.666</td>
+                        <td>B-</td>
+                    </tr>
+                    <tr>
+                        <td>65% - أقل من 70%</td>
+                        <td>2.333</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>60% - أقل من 65%</td>
+                        <td>2.000</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>56% - أقل من 60%</td>
+                        <td>1.666</td>
+                        <td>C-</td>
+                    </tr>
+                    <tr>
+                        <td>53% - أقل من 56%</td>
+                        <td>1.333</td>
+                        <td>D+</td>
+                    </tr>
+                    <tr>
+                        <td>50% - أقل من 53%</td>
+                        <td>1.000</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>أقل من 50%</td>
+                        <td>0.00</td>
+                        <td>F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Other Sections -->
+        <h4 class="mt-4 text-info">مستويات الدراسة</h4>
+        <ul class="list-unstyled ps-3">
+            <li>المستوى الأول: 0-28 ساعة.</li>
+            <li>المستوى الثاني: 29-64 ساعة.</li>
+            <li>المستوى الثالث: 65-98 ساعة.</li>
+            <li>المستوى الرابع: 99-140 ساعة.</li>
+        </ul>
+
+        <h4 class="mt-4 text-info">الإرشاد الأكاديمي</h4>
+        <p>يتم تعيين مرشد أكاديمي لكل طالب لمتابعة الخطة الدراسية والمقررات.</p>
+
+        <h4 class="mt-4 text-info">التخرج ومرتبة الشرف</h4>
+        <ul class="list-unstyled ps-3">
+            <li>التخرج في يناير، يونيو أو سبتمبر.</li>
+            <li>مرتبة الشرف للطالب الذي يتم الدراسة خلال 9 فصول وبمعدل 3.666 فأكثر.</li>
+        </ul>
+    </section>
+
+    <!-- graduate program -->
+    <section id="graduate-program" class="container my-5 p-4 rounded shadow-sm" style="background-color: #f8fbff;">
+        <h2 class="mb-3 text-primary">برامج الدراسات العليا</h2>
+        <p class="text-muted">الماجستير / الدكتوراه</p>
+
+        <!-- Master -->
+        <h3 class="mt-4 text-secondary">الماجستير</h3>
+        <ul class="list-unstyled ps-3">
+            <li>شروط القبول</li>
+            <li>نظام الدراسة</li>
+            <li>التقييم والتقديرات</li>
+            <li>الإرشاد الأكاديمي</li>
+            <li>التخرج ومرتبة الشرف</li>
+        </ul>
+
+        <!-- Admission Requirements -->
+        <h4 class="mt-4 text-info">1. شروط القبول</h4>
+        <ul class="list-unstyled ps-3">
+            <li>حصول الطالب على درجة البكالوريوس في تخصص ذي صلة.</li>
+            <li>اجتياز امتحان القبول والمقابلة الشخصية.</li>
+            <li>تقديم توصيات أكاديمية.</li>
+        </ul>
+
+        <!-- Study System -->
+        <h5 class="mt-3 text-dark">نظام الدراسة</h5>
+        <ul class="list-unstyled ps-3">
+            <li>مدة الدراسة: عامين دراسيين.</li>
+            <li>إجمالي الساعات المعتمدة: 36 ساعة.</li>
+            <li>الفصول الدراسية: فصل خريف وفصل ربيع وفصل صيفي اختياري.</li>
+        </ul>
+
+        <!-- Evaluation System -->
+        <h4 class="mt-4 text-info">2. نظام التقييم والتقديرات</h4>
+        <ul class="list-unstyled ps-3">
+            <li>النهاية العظمى لكل مقرر: 100 درجة.</li>
+            <li>درجة الامتحان التحريري النهائي: من 50 إلى 70 درجة.</li>
+            <li>درجة الامتحان الشفهي (إن وجد): لا تزيد عن 10 درجات.</li>
+            <li>الرسوب إذا حصل الطالب على أقل من 30% في التحريري.</li>
+        </ul>
+    </section>
+
+
+
+    <!-- to upper of the page button -->
+    <div class="return-top"><a href="#main-returnpoint" class="text-decoration-none text-black">top</a></div>
+
+
+
+    <!-- news -->
+    <div>
+        <h1 class="mnews">أخبار الكلية</h1>
+    </div>
+
+
+
+    <div class="cardsnews">
+
+
+        <div class="cardnews">
+            <a href="./news1.html" target="_blank">
+                <img src="./images/الوفد.jpg" alt="">
+                <p>زيارة وفد مركز القياس والتقويم بجامعة الإسكندرية لمتابعة امتحانات كلية الحاسبات وعلوم البيانات</p>
+            </a>
+        </div>
+
+        <div class="cardnews">
+            <a href="./news2.html" target="_blank">
+                <img src="./images/امتحانات2025.jpg" alt="">
+                <p>انطلاق امتحانات نهاية الفصل الدراسي الثاني (ربيع 2025) لمرحلة البكالوريوس بكلية الحاسبات وعلوم
+                    البيانات</p>
+            </a>
+        </div>
+
+        <div class="cardnews">
+            <a href="./news3.html" target="_blank">
+                <img src="./images/دعوة الخريجين.jpg" alt="">
+                <p>دعوة طلاب وخريجي كلية الحاسبات وعلوم البيانات لحضور ملتقى التوظيف والأعمال بكلية الهندسة – جامعة
+                    الإسكندرية 2025</p>
+            </a>
+        </div>
+
+        <div class="cardnews">
+            <a href="./news4.html" target="_blank">
+                <img src="./images/المخدرات.jpg" alt="">
+                <p>كلية الحاسبات وعلوم البيانات تشارك في حملة "أنت أقوى من المخدرات" لرفع الوعي بمخاطر الإدمان</p>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="event">
+        <h1 class="mnews">أحداث الكلية</h1>
+        <p>No events</p>
+    </div>
+
+    <div class="container">
+        <div class="video my-4">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/8U5RLop_zw4" title="YouTube video player"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer section -->
+    <div class="container-fluid my-1" id="footer-container">
+        <footer>
+            <div class="row">
+                <div class="col-4">
+                    <figure>
+                        <img src="./images/Logo/logo.png" alt="logo" style="width: 25vw;" class="mt-5 me-5">
+                        <figcaption class="h5 text-white me-5">Alexandria university Faculty of computer and data
+                            science</figcaption>
+                    </figure>
+                    <!-- <a href="https://web.facebook.com/FCDS.AlexU" id="facebook-image" class="text-decoration-none"
+                        target="_blank"><img
+                            src="./images/Logo/Facebook Icon Social Media PNG & SVG Design For T-Shirts.jpeg"
+                            alt="facebook Logo" style="width: 2.5vw; border-radius:50%;"></a> -->
+                </div>
+                <div class="col-4">
+                    <h2 class="text-white my-5">عنوان الكلية :</h2>
+                    <p class="h4 text-white">عزبة سعد، سيدي جابر، الإسكندرية</p>
+                    <a href="https://www.google.com/maps/place/Faculty+of+Computer+and+Data+Science,+Alexandria+University/@31.2074377,29.9428769,219m/data=!3m1!1e3!4m6!3m5!1s0x14f5c5d821dee8fd:0x2155d145501e691f!8m2!3d31.2076301!4d29.9427127!16s%2Fg%2F11j4ld9rdn?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
+                        class="text-decoration-none text-info" target="_blank">العنوان علي google maps</a>
+                    <br>
+
+                </div>
+                <div class="col-4">
+                    <h2 class="text-white my-5">روابط تهمك :</h2>
+                    <ul class="text-white" id="final-list">
+                        <li class="my-2"><a href="https://www.alexu.edu.eg/" class="text-white text-decoration-none"
+                                target="_blank">موقع جامعة الاسكندرية</a></li>
+                        <li class="my-2"><a href="https://www.ekb.eg/" class="text-white text-decoration-none"
+                                target="_blank">بنك المعرفة</a></li>
+                        <li class="my-2"><a href="https://scholar.google.com.eg/ "
+                                class="text-white text-decoration-none" target="_blank">جوحل البحث العلمي</a></li>
+                        <li class="my-2"><a href="https://fldc.alexu.edu.eg/" class="text-white text-decoration-none"
+                                target="_blank">مركز تنمية اعضاء هيئة التدريس</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="container-fluid bg-dark text-white text-center d-flex align-items-center justify-content-center"
+        style="height: 60px;">
+        <p>&copy; جميع الحقوق تحفظ لجامعة الاسكندرية 2025</p>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
