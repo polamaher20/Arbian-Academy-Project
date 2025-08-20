@@ -64,8 +64,6 @@ header nav ul a:hover {
   transition: all 0.3s ease;
 }
 
-
-
 .student-card img {
   height: 250px;
   object-fit: cover;
@@ -75,9 +73,6 @@ header nav ul a:hover {
 .student-card:hover img {
   transform: scale(1.05);
 }
-
-
-
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
@@ -97,10 +92,6 @@ header nav ul a:hover {
 .carousel-control-prev-icon {
     left: 5%;
 }
-
-
-
-
 
 .carousel-item img {
   object-fit:cover; 
@@ -172,8 +163,6 @@ header nav ul a:hover {
 /* news */
 .cardsnews {
   background-color:#eaf3ff;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
   gap: 20px;
   padding: 20px;
   align-items: start;
