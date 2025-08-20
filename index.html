@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" html dir="rtl">
+<html lang="ar" html dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <title>FCDS</title>
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="./images/Logo/icon/android-chrome-512x512.png">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,7 +16,7 @@
     <header>
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="logo navbar-brand" target="_blank" href="https://www.facebook.com/groups/372944397581792"><img
+                <a class="logo" target="_blank" href="https://www.facebook.com/groups/372944397581792"><img
                         src="./images/Logo/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -32,6 +33,7 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="#about">عن الكلية</a>
                             </li>
@@ -203,8 +205,16 @@
                                     <li><a class="dropdown-item" target="_blank"
                                             href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://fcds.alexu.edu.eg/images/Guides/Graduate_Studies_Guide_2019.pdf">الدليل
                                             الموحد للدراسات العليا</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" target="_blank"
+                                            href="https://gs.alexu.edu.eg/FCDS/">سيستم الكلية</a>
+                                    </li>
                                 </ul>
                             </li>
+
                             <h5 class="mt-4"> تغيير اللغة</h5>
                             <a href="./eng.html">English</a>
                         </ul>
@@ -248,8 +258,6 @@
         </button>
     </div>
 
-
-
     <!-- about unvirsty-->
     <section id="about" class="container my-5 ">
         <div class="p-4 rounded shadow dean-section">
@@ -288,9 +296,6 @@
         </div>
     </section>
 
-
-
-
     <!-- dean-section -->
     <section class="dean-section py-5  ">
         <div class="container">
@@ -321,8 +326,8 @@
 
                 <!-- Dean’s image-->
                 <div class="col-md-4 text-center">
-                    <img src="./images/العميده_3.jpg" alt="عميد الكلية" class=" rounded shadow-lg"
-                        style="border: 4px solid white;">
+                    <img src="./images/dean.jpg" alt="عميد الكلية" class=" rounded shadow-lg"
+                        style="border: 4px solid white; width: 600px; height: 600px; ">
                 </div>
             </div>
         </div>
@@ -330,50 +335,44 @@
 
 
     <!-- Divider -->
-    <div class="divider">
+    <div class="divider"></div>
+
+    <!-- news -->
+
+    <div>
+        <h1 class="mnews">أخبار الكلية</h1>
+    </div>
+    <div class="cardsnews">
+        <div class="cardnews">
+            <a href="./news1.html" target="_blank">
+                <img src="./images/الوفد.jpg" alt="">
+                <p>زيارة وفد مركز القياس والتقويم بجامعة الإسكندرية لمتابعة امتحانات كلية الحاسبات وعلوم البيانات</p>
+            </a>
+        </div>
+        <div class="cardnews">
+            <a href="./news2.html" target="_blank">
+                <img src="./images/امتحانات2025.jpg" alt="">
+                <p>انطلاق امتحانات نهاية الفصل الدراسي الثاني (ربيع 2025) لمرحلة البكالوريوس بكلية الحاسبات وعلوم
+                    البيانات</p>
+            </a>
+        </div>
+        <div class="cardnews">
+            <a href="./news3.html" target="_blank">
+                <img src="./images/دعوة الخريجين.jpg" alt="">
+                <p>دعوة طلاب وخريجي كلية الحاسبات وعلوم البيانات لحضور ملتقى التوظيف والأعمال بكلية الهندسة – جامعة
+                    الإسكندرية 2025</p>
+            </a>
+        </div>
+        <div class="cardnews">
+            <a href="./news4.html" target="_blank">
+                <img src="./images/المخدرات.jpg" alt="">
+                <p>كلية الحاسبات وعلوم البيانات تشارك في حملة "أنت أقوى من المخدرات" لرفع الوعي بمخاطر الإدمان</p>
+            </a>
+        </div>
     </div>
 
-
-
-    <!-- student section-->
-    <section class=" py-5 dean-section">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold">طلاب الكلية</h2>
-            <div class="row g-4">
-                <!-- student card-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card student-card h-100 shadow-sm">
-                        <img src="./images/student_1.jpg" class="card-img-top" alt="طالب 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">محمد اكرم</h5>
-                            <p class="card-text">امين اللجنة الثقافية</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- student card-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card student-card h-100 shadow-sm">
-                        <img src="./images/student_2.jpg" class="card-img-top" alt="طالب 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">ايسل محمد</h5>
-                            <p class="card-text">امين لجتة الاسر العاليا</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- student card-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card student-card h-100 shadow-sm">
-                        <img src="./images/student_3.jpg" class="card-img-top" alt="طالب 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">محمد مصطفي</h5>
-                            <p class="card-text">رئيس اتحاد الطلاب</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Divider -->
+    <div class="divider"></div>
 
     <!-- departments -->
     <section id="departments" class="py-5  dean-section">
@@ -492,6 +491,9 @@
         </div>
     </section>
 
+    <!-- Divider -->
+    <div class="divider"></div>
+
     <!-- academic program -->
     <section id="academic-program" class="container my-5 p-4 rounded shadow-sm" style="background-color: #f8fbff;">
         <h2 class="mb-3 text-primary">البرامج الأكاديمية</h2>
@@ -606,7 +608,8 @@
                 </tbody>
             </table>
         </div>
-
+        <!-- Divider -->
+        <div class="divider"></div>
         <!-- Other Sections -->
         <h4 class="mt-4 text-info">مستويات الدراسة</h4>
         <ul class="list-unstyled ps-3">
@@ -615,10 +618,12 @@
             <li>المستوى الثالث: 65-98 ساعة.</li>
             <li>المستوى الرابع: 99-140 ساعة.</li>
         </ul>
-
+        <!-- Divider -->
+        <div class="divider"></div>
         <h4 class="mt-4 text-info">الإرشاد الأكاديمي</h4>
         <p>يتم تعيين مرشد أكاديمي لكل طالب لمتابعة الخطة الدراسية والمقررات.</p>
-
+        <!-- Divider -->
+        <div class="divider"></div>
         <h4 class="mt-4 text-info">التخرج ومرتبة الشرف</h4>
         <ul class="list-unstyled ps-3">
             <li>التخرج في يناير، يونيو أو سبتمبر.</li>
@@ -640,7 +645,8 @@
             <li>الإرشاد الأكاديمي</li>
             <li>التخرج ومرتبة الشرف</li>
         </ul>
-
+        <!-- Divider -->
+        <div class="divider"></div>
         <!-- Admission Requirements -->
         <h4 class="mt-4 text-info">1. شروط القبول</h4>
         <ul class="list-unstyled ps-3">
@@ -656,7 +662,8 @@
             <li>إجمالي الساعات المعتمدة: 36 ساعة.</li>
             <li>الفصول الدراسية: فصل خريف وفصل ربيع وفصل صيفي اختياري.</li>
         </ul>
-
+        <!-- Divider -->
+        <div class="divider"></div>
         <!-- Evaluation System -->
         <h4 class="mt-4 text-info">2. نظام التقييم والتقديرات</h4>
         <ul class="list-unstyled ps-3">
@@ -667,54 +674,11 @@
         </ul>
     </section>
 
-
-
     <!-- to upper of the page button -->
     <div class="return-top"><a href="#main-returnpoint" class="text-decoration-none text-black">top</a></div>
 
-
-
-    <!-- news -->
-    <div>
-        <h1 class="mnews">أخبار الكلية</h1>
-    </div>
-
-
-
-    <div class="cardsnews">
-
-
-        <div class="cardnews">
-            <a href="./news1.html" target="_blank">
-                <img src="./images/الوفد.jpg" alt="">
-                <p>زيارة وفد مركز القياس والتقويم بجامعة الإسكندرية لمتابعة امتحانات كلية الحاسبات وعلوم البيانات</p>
-            </a>
-        </div>
-
-        <div class="cardnews">
-            <a href="./news2.html" target="_blank">
-                <img src="./images/امتحانات2025.jpg" alt="">
-                <p>انطلاق امتحانات نهاية الفصل الدراسي الثاني (ربيع 2025) لمرحلة البكالوريوس بكلية الحاسبات وعلوم
-                    البيانات</p>
-            </a>
-        </div>
-
-        <div class="cardnews">
-            <a href="./news3.html" target="_blank">
-                <img src="./images/دعوة الخريجين.jpg" alt="">
-                <p>دعوة طلاب وخريجي كلية الحاسبات وعلوم البيانات لحضور ملتقى التوظيف والأعمال بكلية الهندسة – جامعة
-                    الإسكندرية 2025</p>
-            </a>
-        </div>
-
-        <div class="cardnews">
-            <a href="./news4.html" target="_blank">
-                <img src="./images/المخدرات.jpg" alt="">
-                <p>كلية الحاسبات وعلوم البيانات تشارك في حملة "أنت أقوى من المخدرات" لرفع الوعي بمخاطر الإدمان</p>
-            </a>
-        </div>
-    </div>
-
+    <!-- Divider -->
+    <div class="divider"></div>
 
     <div class="event">
         <h1 class="mnews">أحداث الكلية</h1>
@@ -731,32 +695,68 @@
             </div>
         </div>
     </div>
-
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- student section-->
+    <section class=" py-5 dean-section">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">طلاب الكلية</h2>
+            <div class="row g-4">
+                <!-- student card-->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card student-card h-100 shadow-sm">
+                        <img src="./images/student_1.jpg" class="card-img-top" alt="طالب 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">محمد اكرم</h5>
+                            <p class="card-text">امين اللجنة الثقافية</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- student card-->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card student-card h-100 shadow-sm">
+                        <img src="./images/student_2.jpg" class="card-img-top" alt="طالب 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ايسل محمد</h5>
+                            <p class="card-text">امين لجتة الاسر العاليا</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- student card-->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card student-card h-100 shadow-sm">
+                        <img src="./images/student_3.jpg" class="card-img-top" alt="طالب 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">محمد مصطفي</h5>
+                            <p class="card-text">رئيس اتحاد الطلاب</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- footer section -->
     <div class="container-fluid my-1" id="footer-container">
         <footer>
             <div class="row">
-                <div class="col-4">
+                <div class="col-3">
                     <figure>
-                        <img src="./images/Logo/logo.png" alt="logo" style="width: 25vw;" class="mt-5 me-5">
-                        <figcaption class="h5 text-white me-5">Alexandria university Faculty of computer and data
-                            science</figcaption>
+                        <img src="./images/Logo/logo.png" alt="logo" style="width: 250px; text-align: left;"
+                            class="mt-5 mb-3">
+                        <figcaption class="text-white mx-3">جامعة الإسكندرية <br>
+                            كلية علوم الحاسب والبيانات</figcaption>
                     </figure>
-                    <!-- <a href="https://web.facebook.com/FCDS.AlexU" id="facebook-image" class="text-decoration-none"
-                        target="_blank"><img
-                            src="./images/Logo/Facebook Icon Social Media PNG & SVG Design For T-Shirts.jpeg"
-                            alt="facebook Logo" style="width: 2.5vw; border-radius:50%;"></a> -->
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <h2 class="text-white my-5">عنوان الكلية :</h2>
-                    <p class="h4 text-white">عزبة سعد، سيدي جابر، الإسكندرية</p>
+                    <p class="text-white">عزبة سعد، سيدي جابر، الإسكندرية</p>
                     <a href="https://www.google.com/maps/place/Faculty+of+Computer+and+Data+Science,+Alexandria+University/@31.2074377,29.9428769,219m/data=!3m1!1e3!4m6!3m5!1s0x14f5c5d821dee8fd:0x2155d145501e691f!8m2!3d31.2076301!4d29.9427127!16s%2Fg%2F11j4ld9rdn?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
                         class="text-decoration-none text-info" target="_blank">العنوان علي google maps</a>
                     <br>
 
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <h2 class="text-white my-5">روابط تهمك :</h2>
                     <ul class="text-white" id="final-list">
                         <li class="my-2"><a href="https://www.alexu.edu.eg/" class="text-white text-decoration-none"
@@ -768,6 +768,17 @@
                         <li class="my-2"><a href="https://fldc.alexu.edu.eg/" class="text-white text-decoration-none"
                                 target="_blank">مركز تنمية اعضاء هيئة التدريس</a></li>
                     </ul>
+                </div>
+                <div class="col-3  text-white ">
+                    <h2 class="my-5">عن المشروع:</h2>
+                    <p>التدريب الصيفي – Arabian Academy</p>
+                    <p>إشراف: م. ياسر أبو ضيف</p>
+                    <p>فريق العمل:
+                        <span>بولا ماهر</span> |
+                        <span>مريم خالد</span> |
+                        <span>طارق مصطفي</span> |
+                        <span>كريم شوقي</span>
+                    </p>
                 </div>
             </div>
         </footer>

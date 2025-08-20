@@ -21,6 +21,11 @@ body {
   border-bottom: 3px solid rgba(57, 127, 231, 0.49);
 }
 
+.navbar .logo img {
+  margin-top: 0;
+  width: 250px;
+}
+
 header nav .logo {
   position: absolute;
   left: 0;
