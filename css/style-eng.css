@@ -21,20 +21,15 @@ body {
     border-bottom: 3px solid rgba(57, 127, 231, 0.49);
 }
 
-header nav .logo {
+/* header nav .logo {
     position: absolute;
     left: 0;
     top: 5px; 
-}
+} */
 
 .navbar-toggler {
     margin-left: auto;
 }
-
-/* header .navbar .offcanvas .offcanvas-body .dropdown-menu li .dropdown-item {
-    text-align: right !important;
-} */
-
 
 
 header nav .logo img {
@@ -54,7 +49,6 @@ header nav ul a:hover {
 
 
 .dean-section img {
-    max-height: 350px;
     object-fit: cover;
 }
 
